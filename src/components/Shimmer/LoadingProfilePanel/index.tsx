@@ -8,7 +8,7 @@ import { Container } from './styles';
 const LoadingProfilePanel: React.FC = () => {
   return (
     <Container>
-      <Panel className="no-shadown">
+      <Panel className="no-shadow">
         <Skeleton className="bg-skeleton" />
         <span>
           <Skeleton className="avatar-skeleton" />

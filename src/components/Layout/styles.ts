@@ -10,14 +10,14 @@ export const Container = styled.div`
     }
 
   @media (min-width: 1180px) {
+      > span {
+          margin-top: 52px;
+          padding: 8px 0;
+      }
       > main {
           margin: 0 30px;
           display: flex;
           justify-content: center;
-      }
-      > span {
-          margin-top: 52px;
-          padding: 8px 0;
       }
   }
   .left-column, 

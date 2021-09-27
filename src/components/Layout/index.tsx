@@ -15,24 +15,22 @@ const Layout: React.FC = () => {
 
     useEffect(()=>{
         setTimeout(() => {
-            // setIsLoading(false)
+            setIsLoading(false)
         }, 1000);
     }, [])
 
   return (
       <Container>
-          <MobileHeader />
-          <DesktopHeader />
+        <MobileHeader />
+        <DesktopHeader />
 
-          <span>
-              <AdBanner />
-          </span>
-          
-          <main>
-              <LeftColumn isLoading={isLoading} />
-              <MiddleColumn isLoading={isLoading} />
-              <RightColumn isLoading={isLoading} />
-          </main>
+        <span>{ !isLoading && <AdBanner /> }</span>
+        
+        <main>
+            <LeftColumn isLoading={isLoading} />
+            <MiddleColumn isLoading={isLoading} />
+            <RightColumn isLoading={isLoading} />
+        </main>
       </Container>
   )
 }
